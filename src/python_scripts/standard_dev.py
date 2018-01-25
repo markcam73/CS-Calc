@@ -7,7 +7,7 @@ def parse(string):
     for key in dict:
         num_array.append(float(key))
     return num_array
-
+# O(n) complexity
 def sum(sample):
     sum = 0
     for x in sample:
@@ -31,6 +31,10 @@ def y1_list(sample_list, a, b):
         y1_list.append(y1_item(x))
     return y1_list
 
+#given formula, mean(y1) can be found in O(1) constant time vs O(n)
+def y1_mean(x_mean, a, b):
+    result = a*x_mean + b
+    return result
 
 while True:
     sample_list = raw_input("Type input use a space to seperate numbers: ")
@@ -44,15 +48,20 @@ while True:
         print "Sample Variance: %.2f" % variance
         st_dev = variance ** 0.5
         print "Standard Deviation: %.2f" % st_dev
-        y1_list = y1_list(sample, 3.0, 1000.00)
-        print "Y1 List Values: {0}".format(y1_list)
-        y1_sum = sum(y1_list)
-        y1_mean = y1_sum / len(y1_list)
-        print "Y1 Mean: %.2f" % y1_mean
-        y1_variance = sample_variance(y1_mean, y1_list)
-        print "Y1 Sample Variance: %.2f" % y1_variance
-        y1_st_dev = y1_variance ** 0.5
-        print "Y1 Standard Deviation: %.2f" % y1_st_dev
+        
+        # Testing out formula given in class: if there is 
+        # list y such that elements of y = ax + c, then
+        # mean(y) = a(mean(x)) + b and variance(y) = (a^2)(variance(x))
+
+        #y1_list = y1_list(sample, 3.0, 1000.00)
+        #print "Y1 List Values: {0}".format(y1_list)
+        #y1_sum = sum(y1_list)
+        #y1_mean = y1_sum / len(y1_list)
+        #print "Y1 Mean: %.2f" % y1_mean
+        #y1_variance = sample_variance(y1_mean, y1_list)
+        #print "Y1 Sample Variance: %.2f" % y1_variance
+        #y1_st_dev = y1_variance ** 0.5
+        #print "Y1 Standard Deviation: %.2f" % y1_st_dev
         print "End!"
         break
     else:

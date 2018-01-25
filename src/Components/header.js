@@ -11,7 +11,7 @@ class Header extends Component {
         </header>
         <p className="App-intro">
           <strong>
-            Let's do all the work for you, Just type in your data
+             Let's do all the work for you, Just type in your data
           </strong>
         </p>
       </div>

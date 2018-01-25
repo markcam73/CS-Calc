@@ -10,9 +10,9 @@ class Header extends Component {
           <h1 className="App-title">Welcome to stat calc!</h1>
         </header>
         <p className="App-intro">
-         <strong>
-           Let's do all the work for you, Just type in your data
-         </strong>
+          <strong>
+            Let's do all the work for you, Just type in your data
+          </strong>
         </p>
       </div>
     );

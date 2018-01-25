@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div>
         < Header />
-        < Variance/>
+        < Variance />
       </div>
     );
   }

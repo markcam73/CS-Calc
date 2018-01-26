@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import Header from './Components/header.js';
-import Variance from './Components/variance.js'
+import Main from './Components/main.js'
 import './App.css';
 
 class App extends Component {
   render() {
+    console.log(this.props)
     return (
       <div>
-        < Header />
-        < Variance />
+        < Header history= {this.props.history} />
+        < Main history= {this.props.history}/>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Variance extends Component{
+class Statistics extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -38,4 +38,4 @@ class Variance extends Component{
     }
 }
 
-export default Variance;
+export default Statistics;

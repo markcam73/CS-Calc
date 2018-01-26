@@ -15,6 +15,7 @@ class Variance extends Component{
     handleSubmit(event){
         console.log(this.state);
         alert('Data Set entered: ' + this.state.data_set);
+        event.preventDefault();
     }
 
     handleChange(event){

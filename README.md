@@ -1,5 +1,6 @@
-# Stat-Calc
-## Calculator for Statistics Course
+# CS-Calc
+## Calculator for CS Course
+### Calculators for most common calculations needed to be done throughout CS Courses
 
 ### Dependencies (So far...):
 

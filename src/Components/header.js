@@ -17,8 +17,16 @@ class Header extends Component {
   }
 
   handleSubmit = (event) => {
+    if (this.state.value === ""){
+      event.preventDefault();
+      return;
+    }
     this.props.history.push("/" + this.state.value);
     event.preventDefault();
+  }
+
+  goHome = () =>{
+    this.props.history.replace("/");
   }
  
   render() {
@@ -27,14 +35,15 @@ class Header extends Component {
       <div className="App">
         <header className="App-header">
           <img src={"statcalclogo.jpg"} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to stat calc!</h1>
+          <h1 className="App-title">Welcome to stat calc!</h1> 
+          <button style = {{height: '30px'}} onClick={this.goHome}>Home</button>
         </header>
         <div className="App-intro">
           <form onSubmit={this.handleSubmit}>
             <label>
               Select Calculator:
               <select defaultValue={this.state.value} onChange={this.handleChange}>
-                <option value="/"> </option>
+                <option value=""> </option>
                 <option value="statistics">Statistics</option>
                 <option value="calculus">Calculus</option>
                 <option value="asymptotic_complexity">Asymptotic Complexity</option>

@@ -12,6 +12,12 @@
 ### To install:
 
 * install npm and Node.js
-* npm install
 * pip install flask
+* from stat-calc directory, npm install
+
+### Dont forget to update npm after each pull
+
+Run npm install after each pull to make sure the dependecies are up to date or it won't be able to compile
+
+
 

@@ -1,5 +1,5 @@
 import 'whatwg-fetch';//important for getting it to work on safari.
-import {hashHistory} from 'react-router-dom';
+//import {hashHistory} from 'react-router-dom';
 var BASE_URL="http://localhost:5000"
 
 var API={
@@ -32,7 +32,7 @@ var API={
     });
   },
   changePath: function(pathname, state){
-      hashHistory.push({pathname: (pathname), state: state}, pathname,{});
+      props.history.push({pathname: (pathname), state: state}, pathname,{});
   },
 }
 

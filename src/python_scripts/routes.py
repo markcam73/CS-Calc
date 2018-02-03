@@ -2,7 +2,7 @@
 from flask import Flask
 from flask import jsonify
 from flask import request
-import * from standard_dev.py
+from standard_dev import *
 
 app = Flask(__name__)
 

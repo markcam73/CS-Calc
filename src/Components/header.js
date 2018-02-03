@@ -34,7 +34,7 @@ class Header extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={"statcalclogo.jpg"} className="App-logo" alt="logo" />
+          <img src={"statcalclogo.png"} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to stat calc!</h1> 
           <button style = {{height: '30px'}} onClick={this.goHome}>Home</button>
         </header>

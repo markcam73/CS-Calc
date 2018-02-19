@@ -13,6 +13,7 @@
 
 * install npm and Node.js
 * pip install flask
+* pip install flask_cors
 * from stat-calc directory, npm install
 
 ### Dont forget to update npm after each pull

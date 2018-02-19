@@ -9,13 +9,12 @@ class Statistics extends Component{
             variance: null,
             sum : null,
             mean: null,
-            st_dev: null
+            st_dev: null,
+            samp_size: null
         }
-
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
-
     handleSubmit(event){
         console.log(this.state);
         var payload = {data: this.state.data}
@@ -26,14 +25,14 @@ class Statistics extends Component{
                     variance : jsonRes.variance,
                     mean : jsonRes.mean,
                     sum : jsonRes.sum,
-                    st_dev : jsonRes.st_dev
+                    st_dev : jsonRes.st_dev,
+                    samp_size :jsonRes.samp_size 
                 })
                 console.log(this.state)
             }
         })
         event.preventDefault();
     }
-
     handleChange(event){
         this.setState({
             data: event.target.value
@@ -42,13 +41,17 @@ class Statistics extends Component{
     render(){
         var content = (
             <div>
-                <h1> This is your calculated variance: {this.state.variance} </h1>
-                <h1> Mean: {this.state.mean}</h1>
-                
+                <h1>All Calculations: </h1>
+                <p> Variance: {this.state.variance} </p>
+                <p> Mean: {this.state.mean}</p>
+                <p> Sample size: {this.state.samp_size}</p>
+                <p> Standard Deviation: {this.state.st_dev}</p>
+                <p> total sum:{this.state.sum} </p> 
+                                  
                 <button></button>
             </div>
         );
-        var form =  (
+        var form =  ( 
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Enter your Sample Data:

@@ -1,12 +1,20 @@
 #standard_dev.py
 
-def parse(string):
+# need to add:
+#    sort
+#    interquartile range etc
+#    hash
+
+def parse(string):# *realize* CREATES A LIST NOT ARRAY
     dict = ""
     dict = string.split(" ")
     num_array = []
     for key in dict:
         num_array.append(float(key))
     return num_array
+
+def samp_size(sample):
+    return len(sample)
 
 def sum(sample):
     sum = 0

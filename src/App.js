@@ -12,6 +12,6 @@ class App extends Component {
         < Main history= {this.props.history}/>
       </div>
     );
-  }
+  } 
 }
 export default App;

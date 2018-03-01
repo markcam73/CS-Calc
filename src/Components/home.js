@@ -7,7 +7,6 @@ class Home extends Component{
             <div>
                 <h1> WELCOME TO OUR CS CALCULATOR! </h1>
                 <h2> USE THE DROP MENUS TO NAVIGATE BETWEEN CALCULATORS </h2>
-                <h2>THIS IS THE HOME PAGE </h2>
             </div>
         );
     }

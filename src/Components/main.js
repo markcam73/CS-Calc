@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './home.js';
 import Statistics from './statistics.js';
-
+//keeping tabs and "routing" here?
 class Main extends Component{
     render(){
         console.log(this.props)
-        return(
+        return( 
             <main>
                 <Switch>
                     <Route exact path='/' component={Home}/>

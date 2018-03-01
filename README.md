@@ -40,6 +40,15 @@ After you install whats required:
 * [React JS](https://reactjs.org/) - front end
 * [VISUAL STUDIO](https://www.visualstudio.com/) - main editor used by the team
 
+### Screen Shots
+#### initial start up
+![initial start](https://github.com/markcam73/Stat-Calc/blob/master/screenshots/SS%20enter%20data.PNG)
+#### data entered 
+![data entered here](https://github.com/markcam73/Stat-Calc/blob/master/screenshots/SS%20entered.PNG)
+#### current calculations screen
+![calculated png](https://github.com/markcam73/Stat-Calc/blob/master/screenshots/SS%20calc.PNG)
+
+
 ### Contributing
 
 JUST DO IT

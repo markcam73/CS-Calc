@@ -21,6 +21,7 @@ def calc_var():
     s_variance = variance(s_mean,sample)
     s_st_dev = st_dev(s_variance)
     s_samp_size = samp_size(sample)
+    s_sort_samp = merge_sort(sample)
 
     #variance = 1234567    
     
@@ -32,7 +33,8 @@ def calc_var():
         "variance": s_variance,
         "st_dev": s_st_dev,
         #DEBUG HERE,
-        "samp_size": s_samp_size
+        "samp_size": s_samp_size,
+        "merge_sort": s_sort_samp
     }
     
     return jsonify(map)
